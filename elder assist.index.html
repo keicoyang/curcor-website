@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老年人健康助手 - 原型展示</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f0f2f5;
+            color: #333;
+            padding: 40px;
+        }
+        
+        .prototype-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 40px;
+        }
+        
+        .prototype-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .prototype-frame {
+            width: 390px;
+            height: 844px;
+            border: none;
+            border-radius: 44px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            margin-bottom: 16px;
+        }
+        
+        .prototype-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .prototype-description {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            max-width: 390px;
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-3xl font-bold mb-2">老年人健康助手</h1>
+        <p class="text-gray-600 mb-8">高保真原型展示 - 所有界面均可用于开发参考</p>
+        
+        <div class="prototype-container">
+            <div class="prototype-item">
+                <iframe src="home.html" class="prototype-frame"></iframe>
+                <div class="prototype-title">首页</div>
+                <div class="prototype-description">展示今日用药提醒、近期医院预约和健康数据概览</div>
+            </div>
+            
+            <div class="prototype-item">
+                <iframe src="medicine.html" class="prototype-frame"></iframe>
+                <div class="prototype-title">药物管理</div>
+                <div class="prototype-description">管理所有药物，查看药物详情，添加新药物</div>
+            </div>
+            
+            <div class="prototype-item">
+                <iframe src="appointment.html" class="prototype-frame"></iframe>
+                <div class="prototype-title">医院预约</div>
+                <div class="prototype-description">管理医院预约，查看日历，设置提醒</div>
+            </div>
+            
+            <div class="prototype-item">
+                <iframe src="health.html" class="prototype-frame"></iframe>
+                <div class="prototype-title">健康数据</div>
+                <div class="prototype-description">记录和查看健康指标，如血压、血糖和体重</div>
+            </div>
+            
+            <div class="prototype-item">
+                <iframe src="profile.html" class="prototype-frame"></iframe>
+                <div class="prototype-title">个人设置</div>
+                <div class="prototype-description">管理个人信息、健康档案、紧急联系人和应用设置</div>
+            </div>
+            
+            <div class="prototype-item">
+                <iframe src="medicine-detail.html" class="prototype-frame"></iframe>
+                <div class="prototype-title">药物详情</div>
+                <div class="prototype-description">查看药物详细信息、用法用量、提醒设置和库存管理</div>
+            </div>
+        </div>
+        
+        <div class="mt-12 p-6 bg-white rounded-xl shadow-md">
+            <h2 class="text-2xl font-bold mb-4">设计说明</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-lg font-semibold">设计理念</h3>
+                    <p>本应用专为老年人设计，采用简洁明了的界面，大字体、高对比度的视觉元素，确保老年用户能够轻松阅读和操作。</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold">核心功能</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>药物提醒：设置定时提醒，记录服药情况，避免漏服或重复服药</li>
+                        <li>医院预约：管理医院检查时间，提供提前提醒和导航功能</li>
+                        <li>健康数据：记录和监测血压、血糖等关键健康指标</li>
+                        <li>家人协助：允许家人远程查看和协助管理老人的用药和预约</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold">技术实现</h3>
+                    <p>本原型使用HTML、Tailwind CSS和FontAwesome图标库构建，可直接作为前端开发参考。实际应用开发时，建议使用React Native或Flutter等跨平台框架实现，以确保在iOS和Android平台上都能提供一致的用户体验。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
